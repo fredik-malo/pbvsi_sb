@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klub & Atlet - PBVSI Sumba Barat</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        header { background-color: #0d47a1; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .logo-text h1 { font-size: 1.2rem; text-transform: uppercase; }
+        .logo-text p { font-size: 0.8rem; color: #ffeb3b; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: 600; }
+        nav a:hover, nav a.active { color: #ffeb3b; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .page-title { text-align: center; color: #0d47a1; margin-bottom: 30px; }
+        
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #0d47a1; color: white; }
+        tr:hover { background-color: #f1f1f1; }
+
+        footer { background-color: #1a237e; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">
+            <h1>PBVSI SUMBA BARAT</h1>
+            <p>Pengcab Persatuan Bola Voli Seluruh Indonesia</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="turnamen.html">Turnamen</a></li>
+                <li><a href="klub.html" class="active">Klub & Atlet</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">Daftar Klub Terdaftar di PBVSI Sumba Barat</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Klub</th>
+                    <th>Kecamatan</th>
+                    <th>Kategori</th>
+                    <th>Status Reg.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>PBV Kota Waikabubak</td>
+                    <td>Kota Waikabubak</td>
+                    <td>Putra / Putri</td>
+                    <td><strong style="color: green;">Aktif</strong></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>PBV Loli Utama</td>
+                    <td>Loli</td>
+                    <td>Putra</td>
+                    <td><strong style="color: green;">Aktif</strong></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>PBV Wanokaka Volley Club</td>
+                    <td>Wanokaka</td>
+                    <td>Putra / Putri</td>
+                    <td><strong style="color: green;">Aktif</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pengcab PBVSI Kabupaten Sumba Barat, NTT. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
