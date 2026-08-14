@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBVSI Kabupaten Sumba Barat</title>
+    <style>
+        /* Reset & Reset Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigasi */
+        header {
+            background-color: #0d47a1; /* Biru khas olahraga/PBVSI */
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-text h1 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        .logo-text p {
+            font-size: 0.8rem;
+            color: #ffeb3b; /* Kuning aksen */
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(13, 71, 161, 0.8), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=1200') center/cover;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ffb300;
+            color: #000;
+            padding: 10px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #ffa000;
+        }
+
+        /* Konten Utama */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0d47a1;
+        }
+        
+        /* Grid Berita / Informasi */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body h3 {
+            margin-bottom: 10px;
+            color: #0d47a1;
+        }
+        .tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #0d47a1;
+            padding: 3px 8px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="logo">
+            <div class="logo-text">
+                <h1>PBVSI SUMBA BARAT</h1>
+                <p>Pengcab Persatuan Bola Voli Seluruh Indonesia</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#turnamen">Turnamen</a></li>
+                <li><a href="#klub">Klub & Atlet</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <h2>Bangkitkan Semangat Voli Sumba Barat!</h2>
+        <p>Wadah Resmi Pembinaan Atlet, Wasit, dan Penyelenggaraan Kejuaraan Bola Voli di Kabupaten Sumba Barat, Nusa Tenggara Timur.</p>
+        <a href="#turnamen" class="btn">Lihat Jadwal Turnamen</a>
+    </section>
+
+    <!-- Informasi / Berita Terbaru -->
+    <main class="container" id="turnamen">
+        <h2 class="section-title">Informasi & Turnamen Terbaru</h2>
+        
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-body">
+                    <span class="tag">MENDATANG</span>
+                    <h3>Bupati Cup Sumba Barat 2026</h3>
+                    <p>Pendaftaran turnamen voli antar-kecamatan se-Kabupaten Sumba Barat resmi dibuka. Persiapkan tim terbaik Anda!</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-body">
+                    <span class="tag">PEMBINAAN</span>
+                    <h3>Pelatihan Wasit Lisensi C Daerah</h3>
+                    <p>PBVSI Sumba Barat akan mengadakan penyegaran dan pelatihan wasit untuk meningkatkan kualitas pertandingan lokal.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-body">
+                    <span class="tag">PRESTASI</span>
+                    <h3>Seleksi Atlet untuk Kejurda NTT</h3>
+                    <p>Proses seleksi terbuka bagi putra-putri daerah Sumba Barat untuk mewakili kabupaten pada ajang tingkat provinsi.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Pengcab PBVSI Kabupaten Sumba Barat, NTT. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
